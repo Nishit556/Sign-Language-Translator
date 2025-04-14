@@ -281,7 +281,7 @@ history = model.fit(
 # # ---------------------------
 # # Step 8: Save the Model
 # # ---------------------------
-# final_model_path = "/content/drive/MyDrive/Models/sign_language_fused_aug_model_otsu.h5"
+# final_model_path = "/content/drive/MyDrive/Models/sign_language_fused_aug_model.h5"
 # model.save(final_model_path)
 # print(f"✅ Final Model saved at {final_model_path}")
 
