@@ -35,7 +35,7 @@ feature_extractor = Model(inputs=base_model.input, outputs=x)
 # ---------------------------
 # 2. Load the Pre-trained Fused Model (expects 106D input)
 # ---------------------------
-fused_model_path = "/content/drive/MyDrive/Models/sign_language_fused_model.h5"
+fused_model_path = "sign_language_fused_aug_model.h5"
 fused_model = load_model(fused_model_path)
 
 # ---------------------------
@@ -193,8 +193,6 @@ def test_pipeline(image_path):
 #          "/content/drive/MyDrive/Dataset Test/Why/25.jpg", "/content/drive/MyDrive/Dataset Test/Why/50.jpg", "/content/drive/MyDrive/Dataset Test/Where/25.jpg",
 #          "/content/drive/MyDrive/Dataset Test/Yes/30.jpg", "/content/drive/MyDrive/Dataset Test/Please/40.jpg", "/content/drive/MyDrive/Dataset Test/Mother/33.jpg",
 #          "/content/drive/MyDrive/Dataset Test/Stop/1.jpg", "/content/drive/MyDrive/Dataset Test/Stop/25.jpg"]
-
-paths = ["/content/drive/MyDrive/Dataset with No HPE/Yes/100.jpg" ]
 
 for path in paths:
     test_pipeline(path)
